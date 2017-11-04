@@ -1,12 +1,11 @@
 import React from 'react';
 
-const Header = () => (
+const Header = ({linkTo}) => (
   <header className="App-header">
-    <a className="logo-window">
+    <a className="logo-window" href={linkTo}>
       <div className="name">Babs</div>
       <div className="name">Craig</div>
     </a>
-    <h1 className="App-title">Welcome to</h1>
   </header>
 )
 

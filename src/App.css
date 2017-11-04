@@ -546,7 +546,7 @@ body {
   font-size: large;
 }
 
-.logo-window {
+a.logo-window {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -559,13 +559,15 @@ body {
   line-height: 1.15;
   cursor: pointer;
   transition: opacity ease-in 0.5s;
+  text-decoration: none;
+  color: inherit;
 }
 
-.logo-window:hover {
+a.logo-window:hover {
   opacity: 0.65;
 }
 
-.logo-window .name {
+a.logo-window .name {
   font-size: 2rem
 }
 
@@ -657,4 +659,19 @@ nav.menu a:hover span.blt {
 nav.menu a:hover .lnk {
   top: 1.6em;
   color: #fff;
+}
+
+@media only screen and (max-width: 700px) {
+  .App-header {
+    height: 102px !important;
+  }
+  a.logo-window {
+    width: 93px;
+    height: 93px;
+    line-height: 1.15;
+    border: 5px solid #fff;
+  }
+  a.logo-window .name {
+    font-size: 1.3rem;
+  }
 }
