@@ -533,7 +533,7 @@ body {
 
 .App-header {
   background-color: #222;
-  height: 150px;
+  height: 180px;
   padding: 20px;
   color: white;
 }
@@ -545,6 +545,30 @@ body {
 .App-intro {
   font-size: large;
 }
+
+.logo-window {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border: 8px solid #fff;
+  width: 154px;
+  height: 154px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.15;
+  cursor: pointer;
+  transition: opacity ease-in 0.5s;
+}
+
+.logo-window:hover {
+  opacity: 0.65;
+}
+
+.logo-window .name {
+  font-size: 2rem
+}
+
 
 nav.menu {
   position: fixed;
