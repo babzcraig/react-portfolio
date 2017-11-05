@@ -521,16 +521,6 @@ body {
 }
 
 
-
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
 .App-header {
   background-color: #222;
   height: 180px;
@@ -556,6 +546,7 @@ a.logo-window {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   line-height: 1.15;
   cursor: pointer;
   transition: opacity ease-in 0.5s;
@@ -661,6 +652,10 @@ nav.menu a:hover .lnk {
   color: #fff;
 }
 
+.main-content {
+  padding: 0 20px;
+}
+
 @media only screen and (max-width: 700px) {
   .App-header {
     height: 102px !important;
@@ -674,4 +669,15 @@ nav.menu a:hover .lnk {
   a.logo-window .name {
     font-size: 1.3rem;
   }
+}
+
+.testing {
+    background: pink;
+    height: 100px;
+    width: 300px;
+    position: absolute;
+}
+
+.enterred {
+    background: red;
 }

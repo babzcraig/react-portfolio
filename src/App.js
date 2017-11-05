@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './Navbar';
+import MainContent from './MainContent';
 import Header from './Header';
 
 class App extends Component {
@@ -9,9 +9,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header linkTo={"home"} />
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <MainContent />
         <Navbar
           navItems={[
             {text: "Portfolio", link: "portfolio"},
