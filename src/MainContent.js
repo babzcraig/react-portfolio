@@ -9,7 +9,6 @@ class MainContent extends React.Component {
   }
 
   mouseEnter = (e) => {
-    console.log('entered the object!', e);
     this.setState((prevState) => {
       prevState.entryCount = prevState.entryCount + 1;
       prevState.enter = true;
@@ -17,12 +16,10 @@ class MainContent extends React.Component {
   }
 
   mouseLeave = (e) => {
-    console.log('entered the object!', e);
     this.setState({enter: false, innerHTML: "moved once now waiting again..." })
   }
 
   mouseMove = (e) => {
-    console.log('moving around in the object')
       const x = e.clientX;
       const y = e.clientY;
       
