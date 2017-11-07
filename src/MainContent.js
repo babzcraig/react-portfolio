@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Portfolio from './Portfolio';
 
 class MainContent extends React.Component {
   state = {
@@ -32,11 +32,7 @@ class MainContent extends React.Component {
 
     return (
       <div className="main-content">
-        Main Content shit right here
-        <div className={enter ? "enterred testing" : "testing"} onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave} onMouseMove={this.mouseMove}>
-          {innerHTML}
-          {` Your entry count is: ${entryCount}`}
-        </div>
+        <Portfolio />
       </div>
     )
   }
