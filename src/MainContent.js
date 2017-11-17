@@ -1,5 +1,10 @@
 import React from 'react';
-import Portfolio from './Portfolio';
+import {Portfolio, Home, About, Connect, Skills} from './components';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom'
 
 class MainContent extends React.Component {
   state = {
@@ -32,7 +37,12 @@ class MainContent extends React.Component {
 
     return (
       <div className="main-content">
-        <Portfolio />
+
+        <Route exact path="/" component={Home} />
+        <Route path="/portfolio" component={Portfolio} />
+        <Route path="/skills" component={Skills} />
+        <Route path="/connect" component={Connect} />
+        <Route path="/about" component={About} />
       </div>
     )
   }

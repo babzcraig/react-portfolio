@@ -655,6 +655,7 @@ nav.menu a:hover .lnk {
 
 .main-content {
   padding: 0 20px;
+  margin-top: 2rem;
   margin-bottom: 4rem;
 }
 
@@ -694,4 +695,33 @@ nav.menu a:hover .lnk {
     background: red;
     height: 320px;
     cursor: pointer;
+}
+
+.connect {
+    width: 600px;
+    min-height: 800px;
+    margin: auto;
+    margin-bottom: 5rem;
+}
+
+.title {
+    color: yellow;
+}
+
+.connect-link {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+}
+
+.connect div {
+    margin-bottom: 32px;
+}
+
+.tagline {
+    color: #ababab;
+}
+
+span.margin24pxV {
+    margin: 12px 0;
 }

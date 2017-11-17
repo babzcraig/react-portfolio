@@ -1,4 +1,7 @@
 import React from 'react';
+import {
+  Link
+} from 'react-router-dom'
 
 const NavItem = ({
   navItem,
@@ -7,10 +10,10 @@ const NavItem = ({
   const { id, link, text } = navItem;
   
   return (
-    <a style={{flex: `0 0 ${width}%`}} className={`n${id}`} href={link}>
+    <Link style={{flex: `0 0 ${width}%`}} className={`n${id}`} to={link}>
       <span className="blt">•</span>
       <span className="lnk">{text}</span>
-    </a>
+    </Link>
   );
 }
 

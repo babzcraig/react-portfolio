@@ -132,4 +132,4 @@ class Portfolio extends React.Component {
   }
 }
 
-export default Portfolio;
+export {Portfolio};
