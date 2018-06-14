@@ -6,45 +6,119 @@
 ** Updated: 12-08-2013
 ************************************** */
 
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-a, article, aside, figure, footer, header, menu, nav, section, menu,
-time, mark, audio, video {
-	padding:0;
-	margin:0;
-	border:0;
-	outline:0;
-	font-size:100%;
-	vertical-align:baseline;
-	background:transparent;
-	}
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+a,
+article,
+aside,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+menu,
+time,
+mark,
+audio,
+video {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
 
-article, aside, figure, footer, header,
-hgroup, nav, section { display:block; }
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
 
-ins { background-color:#ff9; color:#000; text-decoration:none; }
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
 
-del { text-decoration: line-through; }
+del {
+  text-decoration: line-through;
+}
 
-select, option, input, textarea, type, button {
-	padding:0;
-	margin:0;
-	border:0;
-	outline:0;
-	font-size:100%;
-	vertical-align:baseline;
-	box-shadow:none;
-	box-sizing:			border-box;
-	-moz-box-sizing:	border-box;
-	-webkit-box-sizing:	border-box;
-	}
+select,
+option,
+input,
+textarea,
+type,
+button {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  box-shadow: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
 
 @charset "utf-8";
 /* Title: normalize.css v1.0.2 | MIT License | git.io/normalize 
@@ -73,7 +147,7 @@ hgroup,
 nav,
 section,
 summary {
-    display: block;
+  display: block;
 }
 
 /*
@@ -83,9 +157,9 @@ summary {
 audio,
 canvas,
 video {
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
 }
 
 /*
@@ -94,8 +168,8 @@ video {
  */
 
 audio:not([controls]) {
-    display: none;
-    height: 0;
+  display: none;
+  height: 0;
 }
 
 /*
@@ -105,7 +179,7 @@ audio:not([controls]) {
  */
 
 [hidden] {
-    display: none;
+  display: none;
 }
 
 /* ==========================================================================
@@ -120,9 +194,9 @@ audio:not([controls]) {
  */
 
 html {
-    font-size: 100%; /* 1 */
-    -webkit-text-size-adjust: 100%; /* 2 */
-    -ms-text-size-adjust: 100%; /* 2 */
+  font-size: 100%; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -ms-text-size-adjust: 100%; /* 2 */
 }
 
 /*
@@ -135,7 +209,7 @@ button,
 input,
 select,
 textarea {
-    font-family: sans-serif;
+  font-family: sans-serif;
 }
 
 /* ==========================================================================
@@ -147,7 +221,7 @@ textarea {
  */
 
 a:focus {
-    outline: thin dotted;
+  outline: thin dotted;
 }
 
 /*
@@ -156,7 +230,7 @@ a:focus {
 
 a:active,
 a:hover {
-    outline: 0;
+  outline: 0;
 }
 
 /* ==========================================================================
@@ -170,33 +244,33 @@ a:hover {
  */
 
 h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
+  font-size: 2em;
+  margin: 0.67em 0;
 }
 
 h2 {
-    font-size: 1.5em;
-    margin: 0.83em 0;
+  font-size: 1.5em;
+  margin: 0.83em 0;
 }
 
 h3 {
-    font-size: 1.17em;
-    margin: 1em 0;
+  font-size: 1.17em;
+  margin: 1em 0;
 }
 
 h4 {
-    font-size: 1em;
-    margin: 1.33em 0;
+  font-size: 1em;
+  margin: 1.33em 0;
 }
 
 h5 {
-    font-size: 0.83em;
-    margin: 1.67em 0;
+  font-size: 0.83em;
+  margin: 1.67em 0;
 }
 
 h6 {
-    font-size: 0.67em;
-    margin: 2.33em 0;
+  font-size: 0.67em;
+  margin: 2.33em 0;
 }
 
 /*
@@ -204,7 +278,7 @@ h6 {
  */
 
 abbr[title] {
-    border-bottom: 1px dotted;
+  border-bottom: 1px dotted;
 }
 
 /*
@@ -213,11 +287,11 @@ abbr[title] {
 
 b,
 strong {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 blockquote {
-    margin: 1em 40px;
+  margin: 1em 40px;
 }
 
 /*
@@ -225,7 +299,7 @@ blockquote {
  */
 
 dfn {
-    font-style: italic;
+  font-style: italic;
 }
 
 /*
@@ -233,8 +307,8 @@ dfn {
  */
 
 mark {
-    background: #ff0;
-    color: #000;
+  background: #ff0;
+  color: #000;
 }
 
 /*
@@ -243,7 +317,7 @@ mark {
 
 p,
 pre {
-    margin: 1em 0;
+  margin: 1em 0;
 }
 
 /*
@@ -254,9 +328,9 @@ code,
 kbd,
 pre,
 samp {
-    font-family: monospace, serif;
-    _font-family: 'courier new', monospace;
-    font-size: 1em;
+  font-family: monospace, serif;
+  _font-family: "courier new", monospace;
+  font-size: 1em;
 }
 
 /*
@@ -264,9 +338,9 @@ samp {
  */
 
 pre {
-    white-space: pre;
-    white-space: pre-wrap;
-    word-wrap: break-word;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 /*
@@ -274,7 +348,7 @@ pre {
  */
 
 q {
-    quotes: none;
+  quotes: none;
 }
 
 /*
@@ -283,8 +357,8 @@ q {
 
 q:before,
 q:after {
-    content: '';
-    content: none;
+  content: "";
+  content: none;
 }
 
 /*
@@ -292,7 +366,7 @@ q:after {
  */
 
 small {
-    font-size: 80%;
+  font-size: 80%;
 }
 
 /*
@@ -301,18 +375,18 @@ small {
 
 sub,
 sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
 }
 
 sup {
-    top: -0.5em;
+  top: -0.5em;
 }
 
 sub {
-    bottom: -0.25em;
+  bottom: -0.25em;
 }
 
 /* ==========================================================================
@@ -324,8 +398,8 @@ sub {
 
 nav ul,
 nav ol {
-    list-style: none;
-    list-style-image: none;
+  list-style: none;
+  list-style-image: none;
 }
 
 /* ==========================================================================
@@ -338,8 +412,8 @@ nav ol {
  */
 
 img {
-    border: 0; /* 1 */
-    -ms-interpolation-mode: bicubic; /* 2 */
+  border: 0; /* 1 */
+  -ms-interpolation-mode: bicubic; /* 2 */
 }
 
 /*
@@ -347,7 +421,7 @@ img {
  */
 
 svg:not(:root) {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 /* ==========================================================================
@@ -359,7 +433,7 @@ svg:not(:root) {
  */
 
 figure {
-    margin: 0;
+  margin: 0;
 }
 
 /* ==========================================================================
@@ -371,7 +445,7 @@ figure {
  */
 
 form {
-    margin: 0;
+  margin: 0;
 }
 
 /*
@@ -379,9 +453,9 @@ form {
  */
 
 fieldset {
-    border: 1px solid #c0c0c0;
-    margin: 0 2px;
-    padding: 0.35em 0.625em 0.75em;
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
 }
 
 /*
@@ -391,10 +465,10 @@ fieldset {
  */
 
 legend {
-    border: 0; /* 1 */
-    padding: 0;
-    white-space: normal; /* 2 */
-    *margin-left: -7px; /* 3 */
+  border: 0; /* 1 */
+  padding: 0;
+  white-space: normal; /* 2 */
+  *margin-left: -7px; /* 3 */
 }
 
 /*
@@ -404,7 +478,7 @@ legend {
 
 button,
 input {
-    line-height: normal;
+  line-height: normal;
 }
 
 /*
@@ -421,9 +495,9 @@ button,
 html input[type="button"], /* 1 */
 input[type="reset"],
 input[type="submit"] {
-    -webkit-appearance: button; /* 2 */
-    cursor: pointer; /* 3 */
-    *overflow: visible;  /* 4 */
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+  *overflow: visible; /* 4 */
 }
 
 /*
@@ -432,7 +506,7 @@ input[type="submit"] {
 
 button[disabled],
 input[disabled] {
-    cursor: default;
+  cursor: default;
 }
 
 /*
@@ -444,10 +518,10 @@ input[disabled] {
 
 input[type="checkbox"],
 input[type="radio"] {
-    box-sizing: border-box; /* 1 */
-    padding: 0; /* 2 */
-    *height: 13px; /* 3 */
-    *width: 13px; /* 3 */
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+  *height: 13px; /* 3 */
+  *width: 13px; /* 3 */
 }
 
 /*
@@ -457,10 +531,10 @@ input[type="radio"] {
  */
 
 input[type="search"] {
-    -webkit-appearance: textfield; /* 1 */
-    -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box; /* 2 */
-    box-sizing: content-box;
+  -webkit-appearance: textfield; /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; /* 2 */
+  box-sizing: content-box;
 }
 
 /*
@@ -470,7 +544,7 @@ input[type="search"] {
 
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
-    -webkit-appearance: none;
+  -webkit-appearance: none;
 }
 
 /*
@@ -479,8 +553,8 @@ input[type="search"]::-webkit-search-decoration {
 
 button::-moz-focus-inner,
 input::-moz-focus-inner {
-    border: 0;
-    padding: 0;
+  border: 0;
+  padding: 0;
 }
 
 /*
@@ -489,8 +563,8 @@ input::-moz-focus-inner {
  */
 
 textarea {
-    overflow: auto; /* 1 */
-    vertical-align: top; /* 2 */
+  overflow: auto; /* 1 */
+  vertical-align: top; /* 2 */
 }
 
 /* ==========================================================================
@@ -502,28 +576,21 @@ textarea {
  */
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-
 /* RESET NORMALIZE */
-
-
-
-
-
 
 /* BASE CSS */
 
 body {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
 }
-
 
 .App-header {
   background-color: #222;
-  height: 180px;
+  height: 205px;
   padding: 20px;
   color: white;
 }
@@ -559,9 +626,8 @@ a.logo-window:hover {
 }
 
 a.logo-window .name {
-  font-size: 2rem
+  font-size: 2rem;
 }
-
 
 nav.menu {
   position: fixed;
@@ -569,7 +635,7 @@ nav.menu {
   width: 100%;
   height: 4em;
   z-index: 100;
-  box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
   display: flex;
 }
 
@@ -579,11 +645,10 @@ nav.menu a {
   height: 4em;
   text-align: center;
   color: #949597;
-  border-left: 1px solid #E5E5E5;
+  border-left: 1px solid #e5e5e5;
   box-sizing: border-box;
   background: #fff;
 }
-
 
 nav.menu a:first-child {
   border-left: none;
@@ -603,19 +668,19 @@ nav.menu a span.blt {
 }
 
 nav.menu a.n1 span.blt {
-  background: #2D95BF;
+  background: #2d95bf;
 }
 
 nav.menu a.n2 span.blt {
-  background: #85C440;
+  background: #85c440;
 }
 
 nav.menu a.n3 span.blt {
-  background: #F0C419;
+  background: #f0c419;
 }
 
 nav.menu a.n4 span.blt {
-  background: #F15A5A;
+  background: #f15a5a;
 }
 
 nav.menu a .lnk {
@@ -629,19 +694,19 @@ nav.menu a .lnk {
 }
 
 nav.menu a.n1 .lnk {
-  color: #2D95BF;
+  color: #2d95bf;
 }
 
 nav.menu a.n2 .lnk {
-  color: #85C440;
+  color: #85c440;
 }
 
 nav.menu a.n3 .lnk {
-  color: #F0C419;
+  color: #f0c419;
 }
 
 nav.menu a.n4 .lnk {
-  color: #F15A5A;
+  color: #f15a5a;
 }
 
 nav.menu a:hover span.blt {
@@ -661,7 +726,7 @@ nav.menu a:hover .lnk {
 
 @media only screen and (max-width: 700px) {
   .App-header {
-    height: 102px !important;
+    height: 130px !important;
   }
   a.logo-window {
     width: 93px;
@@ -675,53 +740,53 @@ nav.menu a:hover .lnk {
 }
 
 .testing {
-    background: pink;
-    height: 100px;
-    width: 300px;
-    position: absolute;
+  background: pink;
+  height: 100px;
+  width: 300px;
+  position: absolute;
 }
 
 .enterred {
-    background: red;
+  background: red;
 }
 
 .portfolio {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .portfolio-item {
-    flex: 0 0 25%;
-    background: red;
-    height: 320px;
-    cursor: pointer;
+  flex: 0 0 25%;
+  background: red;
+  height: 320px;
+  cursor: pointer;
 }
 
 .connect {
-    width: 600px;
-    min-height: 800px;
-    margin: auto;
-    margin-bottom: 5rem;
+  width: 600px;
+  min-height: 800px;
+  margin: auto;
+  margin-bottom: 5rem;
 }
 
 .title {
-    color: yellow;
+  color: yellow;
 }
 
 .connect-link {
-    display: block;
-    font-size: 1.2rem;
-    margin-bottom: 4px;
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 4px;
 }
 
 .connect div {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .tagline {
-    color: #ababab;
+  color: #ababab;
 }
 
 span.margin24pxV {
-    margin: 12px 0;
+  margin: 12px 0;
 }
