@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <Header linkTo={"home"} />
+          <Header linkTo={"/home"} />
           <Route path="/" component={MainContent} />
           <Navbar navItems={routes} />
         </div>
