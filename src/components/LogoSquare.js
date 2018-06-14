@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
-const LogoSquare = ({ linkTo, style, homeVersion, onHover }) => {
+const LogoSquare = ({ linkTo, style, homeVersion, onHover, themeColor }) => {
   return (
     <StyledLogoSquare
       onMouseEnter={onHover}
       onMouseLeave={onHover}
       homeVersion={homeVersion}
+      themeColor={themeColor}
       style={style}
       className="logo-window"
       href={linkTo}
@@ -21,8 +22,10 @@ const StyledLogoSquare = styled.a`
   position: ${({ homeVersion }) => (homeVersion ? "static" : "absolute")};
   top: 20px;
   left: 20px;
-  border: ${({ homeVersion }) =>
-    homeVersion ? "11px solid #000" : "8px solid #fff"};
+  border: ${({ homeVersion, themeColor }) => {
+    if (homeVersion) return "11px solid #000";
+    return `8px solid ${themeColor}`;
+  }};
   width: ${({ homeVersion }) => (homeVersion ? "300px" : "154px")};
   height: ${({ homeVersion }) => (homeVersion ? "300px" : "154px")};
 
@@ -50,7 +53,7 @@ const StyledLogoSquare = styled.a`
     width: 93px;
     height: 93px;
     line-height: 1.15;
-    border: 5px solid #fff;
+    border-width: 5px;
     .name {
       font-size: 1.3rem;
     }
