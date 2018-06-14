@@ -734,22 +734,8 @@ nav.menu a:hover .lnk {
   margin-bottom: 5rem;
 }
 
-.title {
-  color: yellow;
-}
-
-.connect-link {
-  display: block;
-  font-size: 1.2rem;
-  margin-bottom: 4px;
-}
-
 .connect div {
   margin-bottom: 32px;
-}
-
-.tagline {
-  color: #ababab;
 }
 
 span.margin24pxV {
