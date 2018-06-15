@@ -603,95 +603,6 @@ body {
   font-size: large;
 }
 
-nav.menu {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 4em;
-  z-index: 100;
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
-  display: flex;
-}
-
-nav.menu a {
-  position: relative;
-  display: block;
-  height: 4em;
-  text-align: center;
-  color: #949597;
-  border-left: 1px solid #e5e5e5;
-  box-sizing: border-box;
-  background: #fff;
-}
-
-nav.menu a:first-child {
-  border-left: none;
-}
-
-nav.menu a span.blt {
-  position: absolute;
-  z-index: 865;
-  left: 0;
-  display: inline-block;
-  background: #949597;
-  width: 100%;
-  height: 0.8em;
-  text-indent: -9999px;
-  overflow: hidden;
-  transition: all 1s ease;
-}
-
-nav.menu a.n1 span.blt {
-  background: #2d95bf;
-}
-
-nav.menu a.n2 span.blt {
-  background: #85c440;
-}
-
-nav.menu a.n3 span.blt {
-  background: #f0c419;
-}
-
-nav.menu a.n4 span.blt {
-  background: #f15a5a;
-}
-
-nav.menu a .lnk {
-  position: absolute;
-  z-index: 870;
-  top: 2em;
-  left: 0;
-  width: 100%;
-  color: #949597;
-  transition: all 1s ease;
-}
-
-nav.menu a.n1 .lnk {
-  color: #2d95bf;
-}
-
-nav.menu a.n2 .lnk {
-  color: #85c440;
-}
-
-nav.menu a.n3 .lnk {
-  color: #f0c419;
-}
-
-nav.menu a.n4 .lnk {
-  color: #f15a5a;
-}
-
-nav.menu a:hover span.blt {
-  height: 4em;
-}
-
-nav.menu a:hover .lnk {
-  top: 1.6em;
-  color: #fff;
-}
-
 .main-content {
   padding: 0 20px;
   margin-top: 2rem;
@@ -725,17 +636,6 @@ nav.menu a:hover .lnk {
   background: red;
   height: 320px;
   cursor: pointer;
-}
-
-.connect {
-  width: 600px;
-  min-height: 800px;
-  margin: auto;
-  margin-bottom: 5rem;
-}
-
-.connect div {
-  margin-bottom: 32px;
 }
 
 span.margin24pxV {
