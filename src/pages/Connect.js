@@ -29,7 +29,6 @@ class Connect extends Component {
             +234 809 599 7279
           </StyledConnectLink>
         </div>
-        <span className="margin24pxV" />
         <StyledTitleText color={themeColor} className="title">
           {"Connect With me"}
         </StyledTitleText>

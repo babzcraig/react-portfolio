@@ -588,56 +588,6 @@ body {
   font-family: "Open Sans";
 }
 
-.App-header {
-  background-color: #222;
-  height: 205px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-.main-content {
-  padding: 0 20px;
-  margin-top: 2rem;
-  margin-bottom: 4rem;
-}
-
-@media only screen and (max-width: 700px) {
-  .App-header {
-    height: 130px !important;
-  }
-}
-
-.testing {
-  background: pink;
-  height: 100px;
-  width: 300px;
-  position: absolute;
-}
-
-.enterred {
-  background: red;
-}
-
-.portfolio {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.portfolio-item {
-  flex: 0 0 25%;
-  background: red;
-  height: 320px;
-  cursor: pointer;
-}
-
 span.margin24pxV {
   margin: 12px 0;
 }

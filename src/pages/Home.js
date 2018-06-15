@@ -31,7 +31,7 @@ class Home extends Component {
             style={overlayVisible ? logoSquareHoverStyle : null}
           />
           <p style={overlayVisible ? { color: "white" } : null}>
-            Software Engineer, React + React Native Specialist
+            Javascript Engineer, React + React Native Specialist
           </p>
         </div>
         <OverlayComponent visible={overlayVisible} />

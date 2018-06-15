@@ -4,39 +4,29 @@ import { Route, Switch, Redirect } from "react-router-dom";
 import styled from "styled-components";
 
 class MainContent extends React.Component {
-  state = {
-    enter: false,
-    innerHTML: "waiting to be changed...",
-    entryCount: 0
-  };
+  _setMainContentRef = e => (this.mainContentRef = e);
 
-  mouseEnter = e => {
-    this.setState(prevState => {
-      prevState.entryCount = prevState.entryCount + 1;
-      prevState.enter = true;
-    });
-  };
-
-  mouseLeave = e => {
-    this.setState({
-      enter: false,
-      innerHTML: "moved once now waiting again..."
-    });
-  };
-
-  mouseMove = e => {
-    const x = e.clientX;
-    const y = e.clientY;
-
-    const innerHTML = `Moved to X: ${x}, Y: ${y}`;
-    this.setState({ innerHTML: innerHTML });
-  };
+  componentDidUpdate(e) {
+    // if (
+    //   window.innerWidth < 993 &&
+    //   e.history.location.pathname !== e.location.pathname &&
+    //   document.documentElement.className.indexOf("nav-open") !== -1
+    // ) {
+    //   document.documentElement.classList.toggle("nav-open");
+    // }
+    // Scroll to top on page change
+    if (e.history.action === "PUSH") {
+      document.documentElement.scrollTop = 0;
+      document.scrollingElement.scrollTop = 0;
+      this.mainContentRef.scrollTop = 0;
+    }
+  }
 
   render() {
     // const { enter, innerHTML, entryCount } = this.state;
 
     return (
-      <StyledMainContent className="main-content">
+      <StyledMainContent className="main-content" ref={this._setMainContentRef}>
         <Switch>
           <Route path="/home" component={Home} />
           <Route path="/portfolio" component={Portfolio} />
