@@ -1,8 +1,11 @@
 module.exports = {
   defaultTitleColor: "#ababab",
   connectLinkColor: "blue",
-  portfolioThemColor: "#0094c4",
-  skillsThemeColor: "#6dcc24",
-  connectThemeColor: "#ff474b",
-  aboutThemeColor: "#f5c800"
+  // theme colors
+  connectThemeColor: "#6dcc24",
+  skillsThemeColor: "#EF6F6C",
+  // connectThemeColor: "#ff474b",
+  // aboutThemeColor: "#f5c800"
+  portfolioThemColor: "#48BEFF",
+  aboutThemeColor: "#2EC4B6"
 };
