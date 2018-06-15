@@ -1,33 +1,21 @@
-import React from "react";
-import PortfolioItem from "../components/PortfolioItem";
-import portfolioArray from "../constants/portfolioArray";
+import React, { Component } from "react";
+import { StyledTitleText, MidScreenContainer, StyledBodyText } from "../styled";
+import { aboutText1 } from "../constants/copy";
+import getThemeColorForRoute from "../utilities/getThemeColorForRoute";
 
-class Portfolio extends React.Component {
-  state = {
-    portfolio: portfolioArray,
-    selectedItem: null
-  };
-
-  handlePortfolioItemHover = id => {
-    console.log("called: ", id);
-    setTimeout(() => this.setState({ selectedItem: id }), 150);
-  };
-
+class Portfolio extends Component {
   render() {
-    const { portfolio, selectedItem } = this.state;
-    // const portfolioItems = portfolio.map((portfolioItem) => {
-    const portfolioItems = portfolio.map(portfolioItem => {
-      return (
-        <PortfolioItem
-          key={portfolioItem.id}
-          portfolioItem={portfolioItem}
-          mouseEnter={this.handlePortfolioItemHover}
-          mouseLeave={this.handlePortfolioItemLeave}
-          selected={selectedItem === portfolioItem.id ? true : false}
-        />
-      );
-    });
-    return <div className="portfolio">{portfolioItems}</div>;
+    const { pathname } = this.props.location;
+    const themeColor = getThemeColorForRoute(pathname);
+
+    return (
+      <MidScreenContainer>
+        <StyledTitleText color={themeColor} centered>
+          {`Some of the work I've done along the way`}
+        </StyledTitleText>
+        <StyledBodyText>{aboutText1}</StyledBodyText>
+      </MidScreenContainer>
+    );
   }
 }
 

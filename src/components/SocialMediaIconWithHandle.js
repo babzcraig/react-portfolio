@@ -20,6 +20,7 @@ const SocialMediaIconWithHandle = ({ handle, name, link }) => {
 const StyledSocialMediaIconContainer = styled.div`
   display: flex;
   align-items: flex-end;
+  margin-bottom: 32px;
 `;
 
 const StyledIconLink = styled.a`

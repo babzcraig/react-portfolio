@@ -1,29 +1,38 @@
 import React, { Component } from "react";
-import { StyledTitleText, StyledConnectLink } from "../styled";
+import {
+  StyledTitleText,
+  StyledConnectLink,
+  MidScreenContainer
+} from "../styled";
 import SocialMediaIconWithHandle from "../components/SocialMediaIconWithHandle";
-// import styled from "styled-components";
+import getThemeColorForRoute from "../utilities/getThemeColorForRoute";
 
 class Connect extends Component {
   render() {
+    const { pathname } = this.props.location;
+    const themeColor = getThemeColorForRoute(pathname);
+
     return (
-      <div className="connect">
-        <StyledTitleText>{"I'd Love to hear from you"}</StyledTitleText>
-        <div>
-          <span className="tagline">Send an email...</span>
+      <MidScreenContainer>
+        <StyledTitleText color={themeColor}>
+          {"I'd Love to hear from you"}
+        </StyledTitleText>
+        <div style={{ marginBottom: 32 }}>
+          <span>Send an email...</span>
           <StyledConnectLink href="mailto:babscraig@gmail.com">
             babscraig@gmail.com
           </StyledConnectLink>
         </div>
-        <div>
-          <span className="tagline">
-            {"Or call. I'm available between 9am to 6pm EDT"}
-          </span>
+        <div style={{ marginBottom: 32 }}>
+          <span>{"Or call. I'm available between 9am to 6pm EDT"}</span>
           <StyledConnectLink href="tel:+2348095997279">
             +234 809 599 7279
           </StyledConnectLink>
         </div>
         <span className="margin24pxV" />
-        <StyledTitleText className="title">{"Connect With me"}</StyledTitleText>
+        <StyledTitleText color={themeColor} className="title">
+          {"Connect With me"}
+        </StyledTitleText>
         <SocialMediaIconWithHandle
           handle={"@babzcraig"}
           name={"github"}
@@ -39,7 +48,7 @@ class Connect extends Component {
           name={"twitter"}
           link={"https://www.twitter.com/thebabscraig"}
         />
-      </div>
+      </MidScreenContainer>
     );
   }
 }
