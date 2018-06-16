@@ -1,10 +1,9 @@
 import React, { Component } from "react";
+import { StyledTitleText, MidScreenContainer } from "../styled";
 import {
-  StyledTitleText,
-  StyledConnectLink,
-  MidScreenContainer
-} from "../styled";
-import SocialMediaIconWithHandle from "../components/SocialMediaIconWithHandle";
+  SocialMediaIconWithHandle,
+  ContactIconWithDetails
+} from "../components/SocialMediaIconWithHandle";
 import getThemeColorForRoute from "../utilities/getThemeColorForRoute";
 
 class Connect extends Component {
@@ -18,16 +17,20 @@ class Connect extends Component {
           {"I'd Love to hear from you"}
         </StyledTitleText>
         <div style={{ marginBottom: 32 }}>
-          <span>Send an email...</span>
-          <StyledConnectLink href="mailto:babscraig@gmail.com">
-            babscraig@gmail.com
-          </StyledConnectLink>
+          <ContactIconWithDetails
+            details={"babscraig@gmail.com"}
+            msg={"Send an email..."}
+            name={"envelope"}
+            link={"mailto:babscraig@gmail.com"}
+          />
         </div>
-        <div style={{ marginBottom: 32 }}>
-          <span>{"Or call. I'm available between 9am to 6pm EDT"}</span>
-          <StyledConnectLink href="tel:+2348095997279">
-            +234 809 599 7279
-          </StyledConnectLink>
+        <div style={{ marginBottom: 64 }}>
+          <ContactIconWithDetails
+            details={"+234 809 599 7279"}
+            msg={"Or call. I'm available between 9am to 6pm EDT"}
+            name={"phone"}
+            link={"tel:+2348095997279"}
+          />
         </div>
         <StyledTitleText color={themeColor} className="title">
           {"Connect With me"}
