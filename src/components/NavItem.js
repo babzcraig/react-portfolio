@@ -84,7 +84,7 @@ const StyledNavLinkItem = styled(Link)`
   }
 
   &.connect .lnk {
-    color: ${() => getThemeColorForRoute(`/$connect`)};
+    color: ${() => getThemeColorForRoute(`/connect`)};
   }
 
   &:hover span.blt {
