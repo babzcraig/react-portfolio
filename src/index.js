@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import registerServiceWorker from "./registerServiceWorker";
 import { BrowserRouter } from "react-router-dom";
+import { LogoSquareProvider } from "./context/LogoSquareContext";
 
 const scrollToTop = () => {
   console.log("ran?");
@@ -15,7 +16,9 @@ const scrollToTop = () => {
 
 ReactDOM.render(
   <BrowserRouter onUpdate={scrollToTop}>
-    <App />
+    <LogoSquareProvider>
+      <App />
+    </LogoSquareProvider>
   </BrowserRouter>,
   document.getElementById("root")
 );
