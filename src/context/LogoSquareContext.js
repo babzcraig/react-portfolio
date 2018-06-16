@@ -15,7 +15,8 @@ export class LogoSquareProvider extends React.Component {
   state = {
     width: 0,
     height: 0,
-    logoIsVisible: true
+    logoIsVisible: true,
+    topOfContainer: null
   };
 
   componentDidMount() {
@@ -28,6 +29,13 @@ export class LogoSquareProvider extends React.Component {
   }
 
   _updateWindowDimensions = () => {
+    if (window.innerWidth > 997) {
+      return this.setState({
+        width: window.innerWidth,
+        height: window.innerHeight,
+        logoIsVisible: true
+      });
+    }
     this.setState({ width: window.innerWidth, height: window.innerHeight });
   };
 
@@ -39,8 +47,10 @@ export class LogoSquareProvider extends React.Component {
     const logoShouldBePutBack =
       !logoIsInTheWay && !logoIsVisible && width < minWidth;
 
-    if (logoIsInTheWay) return this.setState({ logoIsVisible: false });
-    if (logoShouldBePutBack) return this.setState({ logoIsVisible: true });
+    if (logoIsInTheWay)
+      return this.setState({ logoIsVisible: false, topOfContainer });
+    if (logoShouldBePutBack)
+      return this.setState({ logoIsVisible: true, topOfContainer });
   };
 
   render() {

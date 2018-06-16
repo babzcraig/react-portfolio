@@ -51,8 +51,6 @@ const StyledSocialMediaIconContainer = styled.div`
     .icon-link {
       text-decoration: none;
       background: white;
-      width: 64px;
-      height: 64px;
       color: ${({ name }) => {
         switch (name) {
           case "twitter":

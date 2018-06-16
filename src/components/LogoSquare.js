@@ -11,7 +11,8 @@ const LogoSquare = ({
 }) => {
   return (
     <StyledLogoSquare
-      logoIsVisible={logoIsVisible}
+      // if homeVersion, logoVisible has to be permanently true
+      logoIsVisible={homeVersion ? true : logoIsVisible}
       onMouseEnter={onHover}
       onMouseLeave={onHover}
       homeVersion={homeVersion}
