@@ -1,5 +1,11 @@
 import React from "react";
-import { Portfolio, Home, About, Connect, Skills } from "../pages";
+import {
+  PortfolioWithLogoSquareConsumer,
+  Home,
+  About,
+  Connect,
+  Skills
+} from "../pages";
 import { Route, Switch, Redirect } from "react-router-dom";
 import styled from "styled-components";
 
@@ -29,7 +35,10 @@ class MainContent extends React.Component {
       <StyledMainContent className="main-content" ref={this._setMainContentRef}>
         <Switch>
           <Route path="/home" component={Home} />
-          <Route path="/portfolio" component={Portfolio} />
+          <Route
+            path="/portfolio"
+            component={PortfolioWithLogoSquareConsumer}
+          />
           <Route path="/skills" component={Skills} />
           <Route path="/connect" component={Connect} />
           <Route path="/about" component={About} />
