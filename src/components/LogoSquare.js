@@ -1,9 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 
-const LogoSquare = ({ linkTo, style, homeVersion, onHover, themeColor }) => {
+const LogoSquare = ({
+  linkTo,
+  style,
+  homeVersion,
+  onHover,
+  themeColor,
+  logoIsVisible
+}) => {
   return (
     <StyledLogoSquare
+      logoIsVisible={logoIsVisible}
       onMouseEnter={onHover}
       onMouseLeave={onHover}
       homeVersion={homeVersion}
@@ -19,9 +27,13 @@ const LogoSquare = ({ linkTo, style, homeVersion, onHover, themeColor }) => {
 };
 
 const StyledLogoSquare = styled.a`
-  position: ${({ homeVersion }) => (homeVersion ? "static" : "absolute")};
+  text-decoration: none;
+  color: ${({ themeColor }) => themeColor};
+  position: ${({ homeVersion }) => (homeVersion ? "static" : "fixed")};
   top: 20px;
-  left: 20px;
+  left: ${({ logoIsVisible }) => (logoIsVisible ? "20px" : "-160px")};
+  opacity: ${({ logoIsVisible }) => (logoIsVisible ? "1" : "0")};
+
   border: ${({ homeVersion, themeColor }) => {
     if (homeVersion) return "11px solid #000";
     return `8px solid ${themeColor}`;
@@ -35,13 +47,11 @@ const StyledLogoSquare = styled.a`
   text-align: center;
   line-height: 1.15;
   cursor: pointer;
-  transition: opacity 0.2s ease-in-out;
-  text-decoration: none;
-  color: inherit;
+  transition: all 0.5s ease-in-out;
 
   &:hover {
     text-decoration: none;
-    color: inherit;
+    color: ${({ themeColor }) => themeColor};
     opacity: 0.65;
   }
 
@@ -50,12 +60,13 @@ const StyledLogoSquare = styled.a`
   }
 
   @media only screen and (max-width: 700px) {
-    width: 93px;
-    height: 93px;
+    width: ${({ homeVersion }) => (homeVersion ? "186px" : "93px")};
+    height: ${({ homeVersion }) => (homeVersion ? "186px" : "93px")};
     line-height: 1.15;
-    border-width: 5px;
+    border-width: ${({ homeVersion }) => (homeVersion ? "8px" : "5px")};
+
     .name {
-      font-size: 1.3rem;
+      font-size: ${({ homeVersion }) => (homeVersion ? "2.6rem" : "1.3rem")};
     }
   }
 `;
