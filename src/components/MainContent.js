@@ -1,10 +1,10 @@
 import React from "react";
 import {
-  PortfolioWithLogoSquareConsumer,
   Home,
-  About,
-  Connect,
-  Skills
+  PortfolioWithLogoSquareConsumer,
+  AboutWithLogoSquareConsumer,
+  ConnectWithLogoSquareConsumer,
+  SkillsWithLogoSquareConsumer
 } from "../pages";
 import { Route, Switch, Redirect } from "react-router-dom";
 import styled from "styled-components";
@@ -39,9 +39,9 @@ class MainContent extends React.Component {
             path="/portfolio"
             component={PortfolioWithLogoSquareConsumer}
           />
-          <Route path="/skills" component={Skills} />
-          <Route path="/connect" component={Connect} />
-          <Route path="/about" component={About} />
+          <Route path="/skills" component={SkillsWithLogoSquareConsumer} />
+          <Route path="/connect" component={ConnectWithLogoSquareConsumer} />
+          <Route path="/about" component={AboutWithLogoSquareConsumer} />
           <Redirect to="/home" />
         </Switch>
       </StyledMainContent>
