@@ -6,8 +6,9 @@ const MidScreenContainer = styled.div`
   margin: auto;
   margin-bottom: 5rem;
   padding: 24px 0 40px;
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 680px) {
     width: 100%;
+    padding: 24px 1.2rem 40px;
   }
 `;
 
