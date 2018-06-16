@@ -28,6 +28,7 @@ class Home extends Component {
             onHover={this._toggleOverlayVisibility}
             homeVersion
             linkTo={"/portfolio"}
+            themeColor={"#000"}
             style={overlayVisible ? logoSquareHoverStyle : null}
           />
           <p style={overlayVisible ? { color: "white" } : null}>
@@ -47,6 +48,7 @@ const StyledHome = styled.div`
   align-items: center;
   width: 100%;
   min-height: 400px;
+  height: 100vh;
 
   .logo-container {
     margin-top: 54px;
