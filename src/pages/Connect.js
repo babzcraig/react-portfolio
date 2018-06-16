@@ -3,7 +3,7 @@ import { StyledTitleText, MidScreenContainer } from "../styled";
 import {
   SocialMediaIconWithHandle,
   ContactIconWithDetails
-} from "../components/SocialMediaIconWithHandle";
+} from "../components/MediaAndContacIcons";
 import getThemeColorForRoute from "../utilities/getThemeColorForRoute";
 import withLogoSquareConsumer from "../components/HOC/withLogoSquareConsumer";
 

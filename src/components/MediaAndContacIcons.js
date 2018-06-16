@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { StyledConnectLink } from "../styled";
+
 const SocialMediaIconWithHandle = ({ handle, name, link }) => {
   return (
     <StyledSocialMediaIconContainer name={name}>
