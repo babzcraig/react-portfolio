@@ -16,6 +16,6 @@ export default function getThemeColorForRoute(pathname) {
     case "/portfolio":
       return portfolioThemColor;
     default:
-      return connectThemeColor;
+      return "#ababab";
   }
 }
