@@ -18,7 +18,7 @@ const StyledNavContainer = styled.nav`
   bottom: 0;
   width: 100%;
   height: 4em;
-  z-index: 100;
+  z-index: 300;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
   display: flex;
 `;
