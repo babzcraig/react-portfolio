@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { StyledTitleText, MidScreenContainer, StyledBodyText } from "../styled";
-import { aboutText1 } from "../constants/copy";
+import { portfolioText } from "../constants/copy";
 import getThemeColorForRoute from "../utilities/getThemeColorForRoute";
 import withLogoSquareConsumer from "../components/HOC/withLogoSquareConsumer";
+import PortfolioComponent from "../components/PortfolioComponent";
 
 class Portfolio extends Component {
   constructor(props) {
@@ -25,6 +26,10 @@ class Portfolio extends Component {
     toggleLogoSquareIfInTheWay(topOfContainer);
   };
 
+  _renderPortfolioComponent = (portfolio, i) => {
+    return <PortfolioComponent portfolio={portfolio} key={i} />;
+  };
+
   render() {
     const { pathname } = this.props.location;
     const themeColor = getThemeColorForRoute(pathname);
@@ -35,7 +40,8 @@ class Portfolio extends Component {
           <StyledTitleText color={themeColor} centered>
             {`Some of the work I've done along the way`}
           </StyledTitleText>
-          <StyledBodyText>{aboutText1}</StyledBodyText>
+          <StyledBodyText>{portfolioText}</StyledBodyText>
+          {[3, 3, 3].map(this._renderPortfolioComponent)}
         </MidScreenContainer>
       </div>
     );
